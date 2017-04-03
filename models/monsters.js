@@ -1,4 +1,4 @@
-const {bookshelf} = require('../bookshelf.js');
+const {bookshelf} = require('../bookshelf');
 
 require('./battles');
 const Monster = bookshelf.Model.extend({
