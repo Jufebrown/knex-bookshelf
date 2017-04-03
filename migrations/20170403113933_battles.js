@@ -4,8 +4,8 @@ exports.up = function(knex, Promise) {
     .createTable('battles', (table) => {
       table.increments('battle_id').primary()
       table.string('battle_location').notNullable()
-      table.foreign('monster_id')
-      table.foreign('hero_id')
+      table.integer('monster_id')
+      table.integer('hero_id')
     })
 };
 
