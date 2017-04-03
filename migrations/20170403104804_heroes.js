@@ -4,7 +4,6 @@ exports.up = function(knex, Promise) {
     .createTable('heroes', (table) => {
       table.increments('hero_id').primary()
       table.string('hero_name').notNullable()
-      table.
     })
 };
 
